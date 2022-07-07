@@ -1,0 +1,54 @@
+
+
+.hovers:hover {
+      background-color: #333d6b ;
+      color: white;
+      border-radius:20px 20px 20px 20px ;
+        }
+        tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+
+td {
+  padding:9px;
+  font-size: 15px;
+  /*background-color: rgba(255,255,255,0.2);*/
+  color: black;
+}
+
+  th {
+  padding:9px;
+  font-size: 15px;
+  background-color: #55608f;
+  color: white;
+
+  }
+
+  
+ .well {
+    background-color: white;
+    height: 320px;
+
+}
+
+.table-scroll tbody {
+    position: absolute;
+    overflow-y: scroll;
+    height: 250px;
+}
+
+.table-scroll tr {
+    width: 50%;
+    table-layout: fixed;
+    display: inline-table;
+}
+
+.table-scroll thead > tr > th {
+    /*border: none;*/
+}
+
+ thead {
+	background-color: #333d6b;
+
+}

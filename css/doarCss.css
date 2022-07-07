@@ -1,0 +1,108 @@
+
+.a{
+  display: block;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #333;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #333;
+  transition: all .35s;
+}
+
+.icon{
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: all .35s;
+}
+
+.icon svg{
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  transform: rotate(-45deg);
+  fill: #2ecc71;
+  transition: all .35s;
+}
+
+.a:hover{
+  width: 200px;
+  border: 3px solid #2ecc71;
+  background: transparent;
+  color: #2ecc71;
+}
+
+.a:hover + .icon{
+  border: 3px solid #2ecc71;
+  right: -25%;
+}
+
+/*   doar*/
+
+.btn {
+  padding: 15px;
+  font-weight: 700;
+  font-size: 2rem;
+  text-decoration: none;
+  text-align: center;
+  transition: all .5s ease;
+
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.btn--doar {
+
+  color: #fff;
+  padding-right: 0;
+  background-color: #FF6F61;
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 70%, 90% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 75% 100%, 0 100%);
+
+}
+ 
+
+.btn--doar:hover { 
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%);  
+}
+
+.btn--doar:after {
+  content: "\f011";
+  color: black;
+  width: 20%;
+  font-family: FontAwesome;
+  display: inline-block;
+  position: relative;
+  right: -200px;
+  transition: all 0.2s ease;
+}
+
+.btn--doar:hover:after {
+  margin: -10px 15px 0 0;
+  right: 0px;
+}
+.in{
+  background-color: #A0DAA9;
+}
+.in:after{
+content: "\f118";
+/*background-image: url('images/admin.png');
+    background-size: 10px 20px;
+    display: inline-block;
+    width: 10px; 
+    height: 20px;
+    content:"";*/
+  }

@@ -1,0 +1,78 @@
+@import
+	url(https://fonts.googleapis.com/css?family=Roboto:100italic,300,300italic,400,500italic,700,900)
+	;
+
+@import
+	url(https://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+	/*-- By NM --*/
+.l-ltr .dropdown.-start0 .dropdown__content {
+	right: 0px
+}
+
+.l-rtl .dropdown.-start0 .dropdown__content {
+	left: 0px
+}
+
+
+
+.l-rtl .ie .header__logo__img {
+	background-image: url(../images/svgfallback/logo-ar.png)
+}
+
+
+
+.l-ltr .nav__list__item:nth-child(1n) {
+	margin-left: 0
+}
+
+.l-rtl .nav__list__item:nth-child(1n) {
+	margin-right: 0
+}
+
+.l-ltr .header__logo.space-op {
+	margin-left: 0;
+}
+
+.l-rtl .header__logo.space-op {
+	margin-right: 0;
+}
+
+.main-page section.wpthemeControl {
+	margin: 0;
+}
+
+.icon-large {
+	width: 64px;
+	height: 64px;
+}
+
+.form__select {
+	padding: 0px 6px !important;
+}
+
+.l-rtl body {
+	font-size: 14px;
+}
+
+.l-rtl .error {
+	font-size: 10px;
+}
+
+.l-ltr .error {
+	padding-top: 2px;
+}
+
+.l-rtl .header__search__input {
+	border-left: 1px solid #aaa;
+} /*-- By NM for input Red border in FF--*/
+:invalid {
+	box-shadow: none;
+}
+
+:-moz-submit-invalid {
+	box-shado: none;
+}
+
+:-moz-ui-invalid {
+	box-shadow: none;
+}

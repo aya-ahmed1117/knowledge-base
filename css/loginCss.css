@@ -1,0 +1,192 @@
+body {
+ background-image:   url(imag/wallpaper.jpg);
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-repeat:no-repeat;
+    background-size: cover;
+    
+}
+.login {
+
+    background-image:   url(imag/wallpaper.jpg);
+}
+.menu{
+
+    width: 100%;
+    background: #702283;
+    overflow: auto;
+    
+}
+br {
+    display: none;
+}
+
+.menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 60pex;
+}
+.menu li{
+    float: left;
+    list-style: none;
+}
+.menu ul li a{
+    background: #702283;
+    text-decoration: none;
+    width:130px;
+    display: block;
+    text-align: center;
+    color: #ede526;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+    
+}
+ /*.menu li a{
+     color: orange;
+     opacity: ;
+     margin-left: 100px; */
+
+
+
+.search-form{
+    margin-top: 15px;
+    float: right;
+    margin-right: 100px;
+}
+
+    h3{
+        color: white;
+}
+
+
+input[type=text]{
+    padding: 7px;
+    border: none;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+button{
+    float: right;
+    background: orange;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    position: relative;
+    padding: 7px;
+    font-family: sans-serif;
+    border: none;
+    font-size: 12px;
+    
+}
+
+.box{
+    position: absolute;
+    left: 50%;
+    transform: translate(20%,50%);
+    width: 400;
+    padding: 40px;
+    background : rgba(0,0,0,.9);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px #8a7f8d;
+    border-radius: 10px;
+   
+}   
+.box h2{
+    color: #fff;
+    margin: 0 0 30px;
+    padding: 0;
+    text-align: center;
+    color: white;
+    
+    
+}
+.box.inputBox{
+    position: relative;
+    position:absolute;
+        
+}
+
+.box.inputBox input{
+    width: 100%;
+    padding: 10% 0;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid(orange);
+    outline: none;
+ background: transparent;
+    
+}
+input[type=name]{
+    padding: 8px;
+    border: none;
+    font-size: 12px;
+    font-family: sans-serif;
+    color:#13a272;
+    
+}
+input[type=password]{
+    padding: 8px;
+    border: none;
+    font-size: 12px;
+    font-family: sans-serif;
+    color:#13a272;
+}
+.box inputBox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 1.4s;
+    
+}
+
+.box .inputBox input:focus-label
+.box .inputBox input:valid-label{
+    top: 18px;
+    left: 0;
+    color: #6d6def;
+    font-size: 12px;
+    font-family: cursive;
+}
+.box input[type="submit"]{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: orange;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.box input[type="reset"]{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: orange;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+label {color: #fff;}
+
+a {text-decoration: none; color: #fff; padding: 5px; margin: auto; background: green; border-radius: 5px;}
+a:link {text-decoration: none; color: #fff; padding: 5px; margin: auto; background: green; border-radius: 5px;}
+a:active {text-decoration: none; color: #fff; padding: 5px; margin: auto; background: green; border-radius: 5px;}
+a:hover {text-decoration: none; color: #fff; padding: 5px; margin: auto; background: green; border-radius: 5px;}
+
+
+    
+    
+
+    

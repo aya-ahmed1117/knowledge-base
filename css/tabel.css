@@ -1,0 +1,505 @@
+  .table-wrapper {
+    width: 500px;
+    margin: 30px auto;
+        background: #fff;
+        padding: 45px; 
+        padding-top: 45px;
+        padding-bottom: 105px; 
+        box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    }
+    .table-title {
+        padding-bottom: 10px;
+        margin: 0 0 10px;
+    }
+    .table-title h2 {
+        margin: 6px 0 0;
+        font-size: 22px;
+    }
+    .table-title .add-new {
+        float: right;
+    height: 20px;
+    font-weight: bold;
+    font-size: 12px;
+    text-shadow: none;
+    min-width: 100px;
+    border-radius: 50px;
+    line-height: 13px;
+    }
+  .table-title .add-new i {
+    margin-right: 4px;
+  }
+    table.table {
+        table-layout: fixed;
+    }
+    table.table tr th, table.table tr td {
+        border-color: #e9e9e9;
+
+    }
+    table.table th i {
+        font-size: 13px;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+    table.table th:last-child {
+        width: 100px;
+    }
+    table.table td a {
+    cursor: pointer;
+        display: inline-block;
+        margin: 0 5px;
+    min-width: 24px;
+    }    
+  table.table td a.add {
+        color: #27C46B;
+    }
+    table.table td a.edit {
+        color: #FFC107;
+    }
+    table.table td a.delete {
+        color: #E34724;
+    }
+    table.table td i {
+        font-size: 19px;
+    }
+  table.table td a.add i {
+        font-size: 24px;
+      margin-right: -1px;
+        position: relative;
+        top: 3px;
+    }    
+    table.table .form-control {
+        height: 32px;
+        line-height: 32px;
+        box-shadow: none;
+        border-radius: 2px;
+    }
+  table.table .form-control.error {
+    border-color: #f50000;
+  }
+  table.table td .add {
+    display: none;
+  }
+/*
+
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>demo1</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="imag/logo.jpg">
+<link rel="stylesheet" href="css/vendor2.css">
+<link rel="stylesheet" href="css/bootstrap2.min.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap2.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<?php
+       require_once("inc/config.inc");
+
+  if($_SESSION['username'] == ''){ header("location: index.php"); }
+      if(isset($_GET['logout'])){ session_destroy(); header("location: index.php"); }
+        ?>
+        <style type="text/css">
+  .table-wrapper {
+    width: 700px;
+    margin: 30px auto;
+        background: #fff;
+        padding: 45px; 
+        padding-top: 45px;
+        padding-bottom: 105px; 
+        box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    }
+    .table-title {
+        padding-bottom: 10px;
+        margin: 0 0 10px;
+    }
+    .table-title h2 {
+        margin: 6px 0 0;
+        font-size: 22px;
+    }
+    .table-title .add-new {
+        float: right;
+    height: 20px;
+    font-weight: bold;
+    font-size: 12px;
+    text-shadow: none;
+    min-width: 100px;
+    border-radius: 50px;
+    line-height: 13px;
+    }
+  .table-title .add-new i {
+    margin-right: 4px;
+  }
+    table.table {
+        table-layout: fixed;
+    }
+    table.table tr th, table.table tr td {
+        border-color: #e9e9e9;
+
+    }
+    table.table th i {
+        font-size: 13px;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+    table.table th:last-child {
+        width: 100px;
+    }
+    table.table td a {
+    cursor: pointer;
+        display: inline-block;
+        margin: 0 5px;
+    min-width: 24px;
+    }    
+  table.table td a.add {
+        color: #27C46B;
+    }
+    table.table td a.edit {
+        color: #FFC107;
+    }
+    table.table td a.delete {
+        color: #E34724;
+    }
+    table.table td i {
+        font-size: 19px;
+    }
+  table.table td a.add i {
+        font-size: 24px;
+      margin-right: -1px;
+        position: relative;
+        top: 3px;
+    }    
+    table.table .form-control {
+        height: 32px;
+        line-height: 32px;
+        box-shadow: none;
+        border-radius: 2px;
+    }
+  table.table .form-control.error {
+    border-color: #f50000;
+  }
+  table.table td .add {
+    display: none;
+  }
+</style>
+</head>
+
+<body style="background-image: url(imag/cool-backgro.png); background-repeat: no-repeat; background-size: cover;" >
+<!--   style="background-image:  url(imag/wallpaper.jpg);  class="col-sm-12""   -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-size: 15px; height: 50px; backface-visibility: hidden; border-radius: 10px 10px 10px 10px;">
+
+  <ul><img src="imag/logo.jpg" alt="logo.jpg"  style="padding: 1px; padding-bottom: 1px; margin-right: 1px; padding-top: 1px; padding-left: 1px; width: 25px; margin-bottom: 3px; "><span style="font-size:15px;font-family: Century Gothic; margin-right: 1px; ">WorkForce Managment Tool</span></ul> 
+
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="welcome.php"><i class="glyphicon glyphicon-home"></i>Go home <span class="sr-only">(current)</span></a>
+      </li>
+<li class="nav-item ">
+        <a class="nav-link" href="update_demo.php"><i class="glyphicon glyphicon-back"></i>Back<span class="sr-only">(current)</span></a></li>
+</li>
+  
+    </ul> 
+   
+ </div>
+  <ul class="nav navbar-nav navbar-right">
+<li ><a  style="color: #008882;" href="edit_password.php"  target="_blank"><span class="glyphicon glyphicon-user"></span>Change Password</a></li>
+     <li><a href="#" ><span class="glyphicon glyphicon-user"></span> login as <samp>:</samp><?php echo $_SESSION['username'];  ?></a></li>
+
+      <li><a href="?logout"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+    </ul>
+</nav>
+<?php if(isset($_GET['id'])){ ?>
+<?php
+if (isset($_GET['id'])) { $id = $_GET['id']; }
+
+$s_username = $_SESSION['username'];
+  if(isset($_POST['username'])){$username = $_POST['username'];}
+ $checks = sqlsrv_query( $con ,"SELECT * FROM [schedule_table] where id = '$id' ");
+//$output = $check->fetch_array();
+$output = sqlsrv_fetch_array($checks);?>
+<div class="container">
+  <form method="post" >
+    <input enable="false"style="display: none;" class="nav-link disabled" tabindex="-1" type="text" name="engineer_id"  value="<?php echo $_SESSION['username']; ?>"></input>
+  <input type="text"style="display: none;" name="demo_id" class="nav-link disabled" tabindex="-1" value="<?php if(isset($_GET['id'])){echo $_GET['id'] ;} ?>">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-8"><h2>Employee <b>Details</b></h2></div>
+                    
+                </div>
+            </div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+<th width="27%"   class="table table-bordered" >ID</th>
+<th width="27%"   class="table table-bordered" >Engineer</th>
+<th width="27%"  class="table table-bordered" >Shift start</th>
+<th width="27%"  class="table table-bordered" >Shift end</th>
+<th width="27%"  class="table table-bordered" >Date</th>
+<th width="27%"  class="table table-bordered" >Senior</th>
+<th width="27%"  class="table table-bordered" >super</th>
+<th width="27%"  class="table table-bordered" >Section</th>
+                    </tr>
+                </thead>
+                <tbody>
+    <tr style="width:105%;">
+<td><input type="text"  style="width:95%;" class="l"  value="<?php echo $output["id"];?>"></input></td>
+<td><input type="text" name="username" style="width:95%;" class=""  value="<?php echo $output["username"];?>"></input></td>
+<td><input type="text" name="shift_start" style="width:92%;" value="<?php echo $output["shift_start"];?>"></input></td>
+<td><input type="text" name="shift_end" style="width:92%;" value="<?php echo $output["shift_end"];?>"></input></td>
+<td><input type="text" name="schedule_date" style="width:92%;"value="<?php echo $output["schedule_date"]->format('Y-m-d');?>"></input> </td>
+<td  ><input  type="text" style="width:95%;" name="senior" value="<?php echo $output["senior"];?>" ></input> </td>
+<td ><input type="text" style="width:95%;" name="super"  value="<?php echo $output["super"];?>" / </input></td>
+<td ><input type="text" style="width:95%;" name="section" value="<?php echo $output["section"];?>" ></input> </td>
+                   
+</tr>     
+  </tbody>
+  
+</table>
+<div class="col-sm-4">
+  <input type="submit" class="btn btn-info add-new" name="send" " /><i class="fa fa-plus"></i>
+</div>
+
+        </div>
+    </div>
+
+<?php
+
+
+?> 
+</form>
+</div>
+<?php /* if(isset($_GET['id'])){ */?>
+  <?php
+     if (isset($_GET['id'])) { $id = $_GET['id']; }
+
+$s_username = $_SESSION['username'];
+  if(isset($_POST['username'])){$username = $_POST['username'];}
+
+$checks = sqlsrv_query( $con ,"SELECT * FROM [schedule_table] where id = '$id' ");
+//$output = $check->fetch_array();
+$output = sqlsrv_fetch_array($checks);
+$orders_num = 1;
+?>
+  <div>
+    <h3 style='background-color:white; color:black; text-align: center ; border-radius: 0px 20px;
+ border: 5px solid ; margin: 0px auto;padding-top: 20%;
+   width: 70%; padding-top:5px; padding-left: 3px; padding-bottom: 120px;display: none; '>
+<form method="post"style="display: none;" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" style="display: none;">
+ 
+   <input style="display: none;" type="text" name="engineer_id"  value="<?php echo $_SESSION['username']; ?>"></input>
+  <input type="text" name="demo_id" style="display: none;" value="<?php if(isset($_GET['id'])){echo $_GET['id'] ;} 
+?>">
+<input type="text"style="display: none;"name="username"value="<?php echo $output['username']; ?>"/>
+<input type="text"style="display: none;"name="engineer_id"value="<?php echo $output['engineer_id']; ?>"/>
+<input type="text"style="display: none;"name="shift_start"value="<?php echo $output['shift_start']; ?>"/>
+<input type="text" style="display: none;"name="shift_end"value="<?php echo $output['shift_end']; ?>"/>
+<input type="date" style="display: none;"name="schedule_date"value="<?php echo $output["schedule_date"]->format('Y-m-d'); ?>"/>
+<input  type="text"class="nav-link disabled" tabindex="-1" name="shift_start"  value="<?php echo $output['shift_start'];?>"/>
+<input type="text"class="nav-link disabled" tabindex="-1" name="shift_end"value="<?php echo $output['shift_end']; ?>"/></h3>
+
+
+<hr>
+<?php
+}
+if(isset($_GET['id'])){
+//if(isset($_GET['insert'])){
+$demo_id = $_GET['id'];
+if(isset($_POST['send'])){ 
+  $id = $_POST['demo_id'];
+  if(isset($_POST['shift_start'])){$shift_start = $_POST['shift_start'];}
+ if(isset($_POST['shift_end'])){$shift_end = $_POST['shift_end'];}
+ if(isset($_POST['senior'])){$senior = $_POST['senior'];}
+ if(isset($_POST['super'])){$super = $_POST['super'];}
+ if(isset($_POST['note'])){$note = $_POST['note'];}
+
+ if(isset($_POST['username'])){$username_post = $_POST['username'];}
+$sqltime = date ("Y-m-d H:i:s");
+
+$engineer_id = $_SESSION['id'];
+$user = $_SESSION['username'];
+$update_query = sqlsrv_query( $con ,"UPDATE schedule_table SET 
+  [shift_start] = '$shift_start' , 
+  [shift_end] = '$shift_end' , [senior] = '$senior' , [super] ='$super' WHERE id = '$id' 
+  and username = '$username_post' " );
+
+if($update_query){
+ echo "<h3 style='background-color:#fff; color:black; text-align: center ; border-radius: 0px 20px 0px 20px;
+  border: 5px solid ; margin: 0px auto;
+  width: 30%; padding:30px;'> The Update action is done &#10004;</h3>";}else{ echo 'error';}
+}
+
+
+ //if (isset($_GET['id'])) { $id2 = $_GET['id']; }
+
+$s_username = $_SESSION['username'];
+  if(isset($output['username'])){$username = $output['username'];}
+
+   if(isset($output['id'])){$schedule_id = $output['id'];}
+
+   if(isset($output['engineer_id'])){$schedule_engineer_id = $output['engineer_id'];}
+ if(isset($output['shift_start'])){$shift_start =$output['shift_start'];}
+ if(isset($output['shift_end'])){$shift_end = $output['shift_end'];}
+ if(isset($output['schedule_date'])){$schedule_date = $output['schedule_date']->format('Y-m-d');}
+ if(isset($output['note'])){$note = $_POST['note'];}
+
+
+  $creator_id=$_SESSION['id'];
+$sqltime = date ("Y-m-d H:i:s");
+
+$insert_query = sqlsrv_query( $con ,"INSERT INTO [schedule_demo]
+  ([id_schedule], [engineer_id],[username],[shift_start],[shift_end],[schedule_date]
+      ,[senior],[super],[section],[creator_id],[creator_name],[creation_time] )VALUES('$demo_id','$schedule_engineer_id','$username','$shift_start','$shift_end','$schedule_date','0','0','0','$creator_id','$s_username','$sqltime')");
+
+  if($insert_query){
+ echo "<h3 style='background-color:white; color:black; text-align: center ; border-radius: 0px 20px 0px 20px;
+  border: 5px solid ; margin: 0px auto;
+  width: 40%; padding:20px;'> Done insert_query ...</h3>";}
+
+  else{ echo '<h4 style="color:red;background-color:black;font-size:30px;">ERRORRRRRRRR</h4>';}
+
+}?>
+
+<?php 
+$self = $_SESSION['id'];
+
+if(isset($_GET['engineer_id'])){
+  $engineer_ids = $_GET['engineer_id'];
+}
+if($_SESSION['role_id'] == 1)
+{
+ echo '
+<div id="msg_txt"  class="table table-striped table-hover" style="overflow:scroll;overflow-x: hidden; height:450px;width: 100%;">
+
+ <table align="center" class="order-table table" style="color: #702283; border: 5px solid #eee;  flex-wrap: wrap;
+  text-transform: uppercase;
+  position: relative; 
+  font-style: normal; 
+  font-family: Century Gothic;
+
+   width: 80%; height: 55%;grid-template-columns: auto auto auto auto; grid-gap: 15px; " >
+    
+<thead style="background-color: lightgray; width: 100%; word-wrap: break-word ; border: 3px solid white;">';
+
+      echo '<th width="9%" style="border:  1px solid #eee; background-color: #008882;color:#f3e5ab;"  class="form-horizontal" >ID</th>';
+        echo '<th width="9%" style="border:  1px solid #eee; background-color: #6b5b95;color:#f3e5ab;"  class="form-horizontal" >Engineer</th>';
+        echo '<th width="9%" style="border:  1px solid #eee; background-color: #E32934;color:#f3e5ab;"  class="form-horizontal" >Username</th>';
+        echo '<th width="10%"  style="border:  1px solid #eee;background-color: #d64161;color:#f3e5ab;" class="form-horizontal" >Shift start</th>';
+       echo ' <th width="10%" style="border:  1px solid #eee;background-color: #3B5998;color:#f3e5ab;"  class="form-horizontal" >Shift end</th>';
+       echo '<th width="10%"  style="border:  1px solid #eee;background-color: #f7786b;color:#f3e5ab;" class="form-horizontal" >Date</th>';
+        echo '<th width="10%" style="border:  1px solid #eee;background-color: #E32934;color:#f3e5ab;"  class="form-horizontal" >Senior</th>';
+        echo '<th width="10%" style="border:  1px solid #eee;background-color: #b91d47;color:#f3e5ab;"  class="form-horizontal" >super</th>';
+        //echo '<th width="10%" style="border:  1px solid #eee;background-color: #6e4a75;color:#f3e5ab;"  class="form-horizontal" >Section</th>';
+        echo '<th width="10%" style="border:  1px solid #eee;background-color: #6e4a75;color:#f3e5ab;"  class="form-horizontal" >Insert</th>';
+      //  echo '<th width="10%" style="border:  1px solid #eee;background-color: #6e4a75;color:#f3e5ab;"  class="form-horizontal" >Update</th>';
+  echo "</thead>";
+  echo "<tbody>";
+
+$engineer_ids = $_GET['engineer_id'];
+
+$check_engineers  = sqlsrv_query( $con ,"SELECT * FROM employee WHERE id ='$engineer_ids'   ");
+while ( $output_engineers = sqlsrv_fetch_array($check_engineers)){
+  $engineers_id = $output_engineers['id'];
+  $eng_username = $output_engineers['username'] ;
+}
+$first_query = sqlsrv_query( $con ,"SELECT *  FROM schedule_table WHERE username ='$eng_username' order by 3");
+//php -> output data from mysqli
+
+//$first_query = sqlsrv_query( $con ,"SELECT *  FROM schedule_table WHERE username = '$usernames' order by 
+//[schedule_date] ");
+//php -> output data from mysqli
+   while( $output_query = sqlsrv_fetch_array($first_query)){
+$rows  =   '<tr>';
+$rows .= '<td width="5%" style="border: 1px solid #eee;">'.$output_query["id"].'</td>';
+
+$rows .= '<td width="5%" style="border: 1px solid #eee;">'.$output_query["engineer_id"].'</td>';
+$rows .= '<td width="5%" style="border: 1px solid #eee;">'.$output_query["username"].'</td>';
+$rows .= '<td width="5%" style="border: 1px solid #eee;">'.$output_query["shift_start"].'</td>';
+$rows .= '<td width="5%" style="border: 1px solid #eee;">'.$output_query["shift_end"].'</td>';
+$rows .= '<td width="5%" style="border: 1px solid #eee;">'.$output_query["schedule_date"]->format('Y-m-d').'</td>';
+$rows .= '<td width="5%" style="border: 1px solid #eee;">'.$output_query["senior"].'</td>';
+$rows .= '<td width="5%" style="border: 1px solid #eee;">'.$output_query["super"].'</td>';
+//$rows .= '<td width="5%" style="border: 1px solid #eee;">'.$output_query["section"].'</td>';
+//$rows .= '<td width="25%"><a class="btn btn-danger" href="?insert='.$output_query["id"].'"><input type="submit" name="insert" value="send" style="background-color: black;">
+  //insert</a></></td>';
+
+  $rows .= '<td width="25%" name="insert" ><a type="submit" class="btn btn-danger"
+  href="?id='.$output_query["id"].'&engineer_id='.$engineer_ids.'" >Update</a></td>';
+
+ // href="?senior='.$output_query["id"].'&engineer_id='.$engineer_ids.'"
+//$rows .='<div type="button" name="insert" onclick="" ><td  width="10%" style="border: 1px solid #660066; padding:5px;font-size: 10px;"><a  href="?insert='.$output_query["id"].'">Insert</a></td></div>';
+// onClick="$(this).click(function() {return false;});"
+$rows .=   '</tr>';
+  echo $rows;
+}
+}
+?>
+
+</div>
+</form>
+<script type="text/javascript">
+  public function getCreated() {
+return $yourarray->created->date;
+ }
+
+public function getid(){
+   return $yourarray->id
+}
+</script>
+
+</table>
+</tbody>
+<script>
+  function is_ajax_request(){
+    return isset($_SERVER['HTTP_X_REQUESTED_WITH']) && 
+    $_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest';
+  }
+  if(is_ajax_request()){
+    echo "ajax response";
+   }else{
+    echo "non ajax";
+   }
+   </script>
+   <script>
+    function  schedule_insert()
+{
+var msg = $('#msg_txt').val();
+$.ajax({
+    method:"POST", 
+    url:"update_demo.php", 
+     data:{send:true, message:msg}, 
+   success:function(data)
+   {   
+   //console.log('success'); 
+    $('#msg_txt').val("");
+    updateChatBox();
+   }
+  });
+}
+
+function updateChatBox(){
+  $.ajax({
+    url:'update_demo.php?engineer_id='+engineer_id ,
+    method:"GET",   
+   success:function(data)
+   {   
+   
+    $('#ChatBox').html(data);
+   }
+  });
+ }
+
+  var url_string = window.location.href ;
+var url = new URL(url_string);
+var engineer_id = url.searchParams.get("engineer_id");
+  $(function(){
+setInterval(updateChatBox,3000);
+  })
+
+</script>
+</body>
+</html>
+*/

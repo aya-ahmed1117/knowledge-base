@@ -1,0 +1,50 @@
+.hovers:hover {
+      background-color: #333d6b ;
+      color: white;
+      border-radius:20px 20px 20px 20px ;
+        }
+        tr:nth-child(even) {
+        background-color: lightgray;
+        }
+
+
+        .tableFixHead         
+ { 
+   height:450px;overflow-y: auto;
+   overflow-x: auto;
+   padding: 0;
+  border-radius:20px 20px 0 0 ;
+
+ }
+.tableFixHead thead th 
+{ 
+  position: sticky; top: 0; 
+  z-index:4;
+  vertical-align: top;
+}
+.tableFixHead tbody {
+  overflow-y: auto;
+   
+    }
+
+td {
+   padding: 0.2rem 0.2rem;
+  font-size: 15px;
+  /*background-color: rgba(255,255,255,0.2);*/
+  color: black;
+}
+
+  th {
+  padding:9px;
+  font-size: 15px;
+  background-color: #55608f;
+  color: white;
+
+  }
+
+.hover {
+      background: #333d6b;
+      color: #fff;
+        border-radius:20px 20px 20px 20px ;
+
+        }

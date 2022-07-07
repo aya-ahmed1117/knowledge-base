@@ -1,0 +1,367 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.history-slider .flex-viewport{
+  padding: 315px 0 !important;
+}
+
+.l-ltr .usage-options {
+  margin-right: 3.5%;
+/*  margin-left: 3.5%  !important;*/
+}
+/* .social-icons.facebook-icon{padding-top:4px !important;}
+
+.social-icons.twitter-icon{padding-top: 6px !important;}
+	
+.social-icons.youtube-icon{padding-top: 4px !important;}.social-icons.google-plus-icon{padding-top: 4px!important;}.social-icons.instagram-icon{padding-top: 4px !important;}.social-icons.linkedin-icon{padding-top: 4px !important;}
+ */
+ .text-dark {
+    color: #9b9b9b!important; /*was #8d8d8d and for menu text too dark*/
+} 
+ 
+ /****New classes 3-9-2015****/
+  
+
+.margin-0-15{
+	 margin: 0px !important;
+    text-align: center !important;
+	
+	}
+
+
+
+/****Main Menu ***********/ 
+
+.l-ltr .dropdown.-start320 .dropdown__content{
+    left: -495px !important;/*-406px*/
+}
+.l-ltr .dropdown.-start625 .dropdown__content {
+        left: -325px !important;
+    }	
+.l-rtl .dropdown.-start320 .dropdown__content {
+    right: -372px !important;/*-529px*/
+}
+.l-rtl .dropdown.-start625 .dropdown__content {
+    right: -768px;
+}
+.l-ltr .dropdown.-start1050 .dropdown__content {
+    left: -849px !important;
+}
+
+.l-rtl .dropdown.-start1050 .dropdown__content {
+    right: -828px !important;
+}
+
+.l-ltr .dropdown.-start930 .dropdown__content {
+    left: -517px !important;
+}
+
+.l-rtl .dropdown.-start930 .dropdown__content {
+    right: -601px !important;
+}
+
+
+
+/****Usage HTML***********/ 
+
+
+.l-ltr .loading-bar .active-bar .result {
+    left: 0px;
+    margin-left: -30px !important; 
+
+}
+
+.l-rtl .loading-bar .active-bar .result {
+    margin-right: -63px !important;
+}
+
+/*****for NTR message in footer ********/
+
+.margin-top-5 {
+    margin-top: 30px!important;
+}
+
+/***Side nav menu******/
+.side-nav__list__link .side-nav__list__icon, .side-nav__list__link span {
+    display: inline !important;
+	}
+	
+/****Mega Menu text and headers*****/
+
+.text-large {
+    font-size: 16px !important;
+}
+
+.list, .pagination, .side-nav__list, .steps__nav {
+    font-size: 15px !important;
+}
+.footer__list__link {
+    color: #767676 !important;
+	}
+	
+/** Unifying the font format all over the portal***/
+
+.block__head {
+    font-size: 23px !important; /*was 30*/
+}
+
+.block--small .block__head {
+    font-size: 23px !important; }
+	
+	
+.text-medium {
+    font-size: 16px !important; /*was 17*/
+}
+
+/******* for ADSL plans more and subscribe button ************/
+.shaped-card__cell:last-child {
+    border-right: 0px solid #F04B51 !important;/*was 0*/
+} 
+.text-x-large {
+    font-size: 26px !important;/*was 32px*/
+}
+
+/*Image Slider updates to be clickable****/
+
+.slider__list__img {
+    cursor: pointer !important;
+	}
+
+/**<div>class="text-bold text-small text-white" instead of class="text-bold text-small text-gray" ** to solve bold links in mega menu
+**/ 
+
+.l-ltr .form__checkbox, .l-ltr .form__radio {
+    padding-right: 0px; 
+	}
+	
+/*** Business home page Header ******/
+.block__head_New{font-size:21px !important;
+    padding:13px 0px !important;
+	}
+	
+	
+.circle__icon.-locator{
+    width: 65px !important;
+    height: 65px !important; 
+}
+
+.text-xx-large {
+    font-size: 48px !important;
+	}
+
+	
+/****navigation slider right and left ******/
+
+@font-face {
+  font-family: 'flexslider-icon';
+  src: url('./fonts/flexslider-icon.eot');
+  src: url('./fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('./fonts/flexslider-icon.woff') format('woff'), url('./fonts/flexslider-icon.ttf') format('truetype'), url('./fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.direction-nav {
+  margin: 0 !important ;
+  padding: 0 !important ;
+  list-style: none !important ;
+}
+.direction-nav {
+  *height: 0 !important ;
+}
+.direction-nav a {
+  text-decoration: none !important ;
+  display: block!important ;
+  width: 40px!important ;
+  height: 40px!important ;
+  margin: -20px 0 0!important ;
+  position: absolute!important ;
+  top: 50% !important ;
+  z-index: 10 !important ;
+  overflow: hidden !important ;
+  opacity: 0 !important ;
+  cursor: pointer !important ;
+  color: rgba(255, 255, 255, 0.8) !important ;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3) !important ;
+  -webkit-transition: all 0.3s ease-in-out !important ;
+  -moz-transition: all 0.3s ease-in-out !important ;
+  -ms-transition: all 0.3s ease-in-out !important ;
+  -o-transition: all 0.3s ease-in-out !important ;
+  transition: all 0.3s ease-in-out !important ;
+  cursor: pointer !important ;
+}
+.direction-nav a:before {
+  font-family: "flexslider-icon" !important ;
+  font-size: 40px !important ;
+  display: inline-block !important ;
+  content: '\f001' !important ;
+color: rgba(255, 255, 255, 0.8)!important ;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3) !important ;
+
+}
+.direction-nav a.next:before {
+  content: '\f002'!important ;
+}
+.direction-nav a.prev {
+  left: -50px !important ;
+}
+.direction-nav a.next {
+  right: -50px !important ;
+  text-align: right !important ;
+}
+.js-slider--full:hover .direction-nav a.prev {
+   opacity: 0.8 !important ;
+  left: 10px !important ;
+
+    
+}
+.js-slider--full:hover .direction-nav a.prev:hover {
+  opacity: 1 !important ;
+}
+.js-slider--full:hover .direction-nav a.next {
+   opacity: 0.8 !important ;
+  right: 10px !important ;
+}
+.js-slider--full:hover .direction-nav a.next:hover {
+  opacity: 1 !important ;
+}
+
+@media screen and (max-width: 860px) {
+  .direction-nav a.prev {
+    opacity: 1 !important ;
+    left: 10px !important ;
+  }
+  .direction-nav a.next {
+    opacity: 1 !important ;
+    right: 10px !important ;
+  }
+}
+/********************** class of control-paging / Main Slider bullets in center / Home page / By Enass Mahfouz ******************/
+
+                            .control-paging{
+                               display: block !important ;
+                                position: absolute !important ;
+                                top:75% !important ;
+                                left: 45% !important ;
+                                z-index: 80000 !important ;
+                                text-align: center !important ;
+                                padding-left: 0px !important;
+                            }
+
+
+
+
+
+.control-paging li a {
+  width: 11px !important ;
+  height: 11px!important ;
+  display: block!important ;
+  background: #666!important ;
+  background: rgba(0, 0, 0, 0.5)!important ;
+  cursor: pointer!important ;
+  text-indent: -9999px!important ;
+  -webkit-box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.3)!important ;
+  -moz-box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.3)!important ;
+  -o-box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.3)!important ;
+  box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.3)!important ;
+  -webkit-border-radius: 20px!important ;
+  -moz-border-radius: 20px!important ;
+  border-radius: 20px!important ;
+  cursor: pointer!important ;
+}
+.control-paging li{
+    display: inline-block !important ;
+    margin: 0 5px !important ;
+      cursor: pointer !important ;
+}
+
+.control-paging li a:hover {
+  background: #333 !important ;
+  background: rgba(255, 255, 255, 0.8)!important ;
+}
+.control-paging li a.active {
+  background: #000 !important ;
+  background: rgba(255, 255, 255, 1) !important ;
+  cursor: default !important ;
+}
+
+
+/**************** Enass 18-8-2016 Top Navigation tabs color and font ********************/
+
+.is-tabs__nav{margin:0;padding:0;display:table;width:100%;border:1px solid #333;border-radius:4px;color:#6d6d6d; font-weight:bold;}
+
+
+.is-tabs__nav__btn{display:block;padding:3px 10px;text-align:center;line-height:2;font-size:15px;font-weight:bold;}
+
+
+/**************** Enass 18-8-2016 Fix the extra space above side components in mobile and tablet view in Residential Home page ********************/
+
+.l-row--double {
+    margin-bottom: 0px !important;
+}
+
+/**************** Enass 18-8-2016 Fix three buttons of(Speed Q and Convenience) in mobile and tablet view ARABIC version in Residential Home page ********************/
+
+.counter {
+    padding: 5px 0 !important;
+}
+
+.thumbnail img {
+    padding-top: 5px !important;
+}
+
+/**************** Enass 18-8-2016 Fix font size of 4 middle icons in mobile view in Residential Home page ********************/
+
+.list--cards>.list__item {
+    padding: 15px !important;
+    font-size: 17px !important;
+    color: #333;
+  
+}
+
+/*////////////////////////////////////////////////////////
+New style by Ahmed Ragab 16/8/2016 for 
+///////////////////////////////////////////////////////*/
+
+body aside.side__menu .tab__content .tab__list .tab_list_item .tab_list_submenu {
+    display: none;
+    padding-left: 50px;
+    padding-right: 10px;
+    overflow: hidden;
+    background: #f6f6f6;
+    margin-left: -20px;
+    margin-right: -20px;
+    /* border-bottom: 1px solid #000; */
+}
+
+body aside.side__menu .tab__content .tab__list .tab_list_item .tab_list_submenu .tab_list_submenu_item {
+     margin: 5px 0; 
+    padding: 10px 0;
+    border-bottom: 1px dotted #d7d7d7;
+}
+
+body aside.side__menu .tab__content .tab__list .tab_list_item.is-active svg {
+    -webkit-transform: rotate(90deg) !important;
+    transform: rotate(90deg);
+    -moz-transform: rotate(45deg);
+    overflow: visible;
+}
+
+body aside.side__menu .tab__content .tab__list li.tab_list_item ul.tab_list_submenu li.tab_list_submenu_item:last-child {
+
+  border-bottom: 0px dotted #000;
+}
+
+
+/**************** Enass 18-8-2016 Fix space in left and right in mobile view in Residential Home page ********************/
+
+/************
+.col-sm-12, .col-sm-6 {
+    padding-left: 6px;  was 10px
+    padding-right: 6px; was 10px
+}
+******/
+	
+	
+
+
