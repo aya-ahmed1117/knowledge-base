@@ -1,0 +1,17 @@
+USE [EPMKS]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[tbl_updated_item](
+	[update_id] [int] IDENTITY(1,1) NOT NULL,
+	[project_id] [int] NULL,
+	[User_updating] [nvarchar](50) NULL,
+	[Time_of_updating] [datetime] NULL,
+	[item_updated_type] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
